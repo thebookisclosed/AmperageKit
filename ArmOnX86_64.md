@@ -32,6 +32,7 @@ Move the generated ISO to the `D:\w11arm64` directory and give it a less cumbers
 
 ## Step 3: Installing QEMU
 To install QEMU simply double-click the setup you've downloaded as prerequisite #2. When asked which components you'd like to install, you can uncheck all System Emulation items except `aarch64`
+
 ![image](https://github.com/thebookisclosed/AmperageKit/assets/13197516/2fde3bb2-e341-4edd-9151-bd44706d0273)
 
 ## Step 4: Extracting the firmware image
@@ -61,15 +62,18 @@ qemu-system-aarch64 ^
 -drive if=none,id=virtio-drivers,format=raw,media=cdrom,file=./virtio-win-0.1.248.iso ^
 -drive if=virtio,id=system,format=raw,file=./win11arm64.img
 ```
+
 ![image](https://github.com/thebookisclosed/AmperageKit/assets/13197516/1b1f2bb9-fed3-41a6-9b8d-1f3c0ab5e405)
 
 
 ## Step 7: Bypassing TPM and secure boot requirements
 Once you're booted into the Windows installer, press `Shift-F10` on your keyboard to open command prompt within the installer.
+
 ![image](https://github.com/thebookisclosed/AmperageKit/assets/13197516/e1d1f1fd-b63c-4000-bc46-66f4ba58fbbd)
 
 Type `regedit` and hit Enter. Now navigate to `HKLM\System\Setup` and create a new key called `LabConfig`. Inside that key, create two DWORD values calles `BypassTPMCheck` and `BypassSecureBootCheck` and set them to a value of `1`.
 This is how the registry editor panes should look if you've done everything correctly.
+
 ![image](https://github.com/thebookisclosed/AmperageKit/assets/13197516/68410b48-dec9-47a2-a370-3840128861b8)
 
 ## Step 8: Adding storage drivers
