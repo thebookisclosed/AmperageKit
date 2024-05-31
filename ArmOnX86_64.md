@@ -18,7 +18,7 @@ The following guide has been adapted from [Linaro's windows-arm64 VM using qemu-
 3) VirtIO drivers from [here](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/virtio-win.iso)
 4) `qemu-efi-aarch64` package from the [Debian repo](https://packages.debian.org/sid/all/qemu-efi-aarch64/download) (only used as a source of firmware)
 
-# Preparing the emulation setup
+# Chapter 1: Preparing the emulation setup
 ## Step 1: Creating a folder where you'll store the virtual machine and related assets
 For the purposes of this tutorial, the working folder will be `D:\w11arm64`
 
@@ -46,7 +46,8 @@ Open a command prompt and enter the following commands:
 
 Do not close this command prompt window as it will be useful in the coming steps.
 
-## Step 6: Starting the virtual machine
+# Chatper 2: Starting installation
+## Step 1
 Enter this multiline command and hit enter. A virtual machine with 8 cores (`-smp 8`) and 8 GB of RAM (`-m 8G`) allocated will be started. Make sure to click into the window and once you see a `Press any key to boot from CD or DVD..` prompt hit the Enter key on your keyboard a few times.
 ```
 qemu-system-aarch64 ^
@@ -66,7 +67,7 @@ qemu-system-aarch64 ^
 ![image](https://github.com/thebookisclosed/AmperageKit/assets/13197516/1b1f2bb9-fed3-41a6-9b8d-1f3c0ab5e405)
 
 
-## Step 7: Bypassing TPM and secure boot requirements
+## Step 2: Bypassing TPM and secure boot requirements
 Once you're booted into the Windows installer, press `Shift-F10` on your keyboard to open command prompt within the installer.
 
 ![image](https://github.com/thebookisclosed/AmperageKit/assets/13197516/e1d1f1fd-b63c-4000-bc46-66f4ba58fbbd)
@@ -76,7 +77,7 @@ This is how the registry editor panes should look if you've done everything corr
 
 ![image](https://github.com/thebookisclosed/AmperageKit/assets/13197516/68410b48-dec9-47a2-a370-3840128861b8)
 
-## Step 8: Adding storage drivers
+## Step 3: Adding storage drivers
 You can continue through Windows setup as you would normally. Once you reach the disk selection page you'll notice that there are no disks to pick from. To fix this click the 💿 `Load driver` label, then `Browse` and finally select the `E:\viostor\w11\ARN64` folder. Once installed, the rest of the Windows setup process should be mostly unattended like on a standard x86_64 PC.
 
 _Similar steps can be repeated on install the `NetKVM` driver to establish a network connection once Windows boots into the first-run experience._
