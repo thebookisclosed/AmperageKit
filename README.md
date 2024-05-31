@@ -7,6 +7,8 @@ Make sure that you're running Windows 11 version 24H2 **build 26100.712** before
 
 Most x86_64 users will have to wait until Microsoft publishes AI Components for their platform. _However_, if you're feeling particularly adventurous you can try [Emulating Arm64 Windows on your x86_64 Windows PC](https://github.com/thebookisclosed/AmperageKit/blob/main/ArmOnX86_64.md)
 
+26100.712 is also available on [Azure ARM VMs](https://learn.microsoft.com/en-us/windows/arm/create-arm-vm) by using a 24H2 image (currently 26100.560) and installing KB5037589.
+
 # How do I get started?
 1) Download the AI Components (Machine Learning workloads) for Arm64 from [here](https://archive.org/details/windows-workloads-0.3.252.0-arm-64.7z)
 2) Unpack the contents of the 7z archive to a folder called `WorkloadComponents`
