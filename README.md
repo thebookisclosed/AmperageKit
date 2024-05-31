@@ -10,13 +10,12 @@ Most x86_64 users will have to wait until Microsoft publishes AI Components for 
 26100.712 is also available on [Azure ARM VMs](https://learn.microsoft.com/en-us/windows/arm/create-arm-vm) by using a 24H2 image (currently 26100.560) and installing KB5037589.
 
 # How do I get started?
-1) Download the AI Components (Machine Learning workloads) for Arm64 from [here](https://archive.org/details/windows-workloads-0.3.252.0-arm-64.7z)
-2) Unpack the contents of the 7z archive to a folder called `WorkloadComponents`
-3) Head to the [Releases](https://github.com/thebookisclosed/AmperageKit/releases) page and download the latest version
-4) Unpack the release you've just downloaded
-5) Move the `WorkloadComponents` folder from earlier next to `Amperage.exe`
-6) Fire up Command Prompt as Administrator and navigate to the directory you extracted Amperage to
-7) Type in `amperage /install` and hit Enter
+1) Head to the [Releases](https://github.com/thebookisclosed/AmperageKit/releases) page and download the latest version
+2) Download the AI Components (Machine Learning workloads) for Arm64 from [here](https://archive.org/details/windows-workloads-0.3.252.0-arm-64.7z)
+3) Unpack the release you've just downloaded
+4) Unpack the contents of the Workloads archive into the `WorkloadComponents` folder next to `Amperage.exe`
+5) Fire up Command Prompt as Administrator and navigate to the directory you extracted Amperage to
+6) Type in `amperage /install` and hit Enter
 
 The tool will now guide you through Recall installation. It should all finish in one fell swoop but in case you happened to misplace any files, it will let you know as soon as you run it.
 ![image](https://github.com/thebookisclosed/AmperageKit/assets/13197516/722ffccb-3c16-4d3e-bf4c-b959d01588e3)
