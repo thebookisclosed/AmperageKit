@@ -16,7 +16,7 @@ namespace VmDetection
                 return false;
             var hvId = info.HvVendorAndMaxFunction.DataUInt32[1] | ((ulong)info.HvVendorAndMaxFunction.DataUInt32[2] << 32);
             // QCOM
-            if (hvId != 0x4D4F4351 && (info.HvFeatures.DataUInt64[0] & 0x100000000000) == 0)
+            if (hvId != 0 && hvId != 0x4D4F4351 && (info.HvFeatures.DataUInt64[0] & 0x100000000000) == 0)
                 return true;
             return false;
         }
