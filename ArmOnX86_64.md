@@ -78,7 +78,7 @@ This is how the registry editor panes should look if you've done everything corr
 ![image](https://github.com/thebookisclosed/AmperageKit/assets/13197516/68410b48-dec9-47a2-a370-3840128861b8)
 
 ## Step 3: Adding storage drivers
-You can continue through Windows setup as you would normally. Once you reach the disk selection page you'll notice that there are no disks to pick from. To fix this click the 💿 `Load driver` label, then `Browse` and finally select the `E:\viostor\w11\ARN64` folder. Once installed, the rest of the Windows setup process should be mostly unattended like on a standard x86_64 PC.
+You can continue through Windows setup as you would normally. Once you reach the disk selection page you'll notice that there are no disks to pick from. To fix this click the 💿 `Load driver` label, then `Browse` and finally select the `E:\viostor\w11\ARM64` folder. Once installed, the rest of the Windows setup process should be mostly unattended like on a standard x86_64 PC.
 
 _Similar steps can be repeated on install the `NetKVM` driver to establish a network connection once Windows boots into the first-run experience._
 
