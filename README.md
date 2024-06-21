@@ -3,7 +3,16 @@ Amperage is a console Windows app designed to help you enable Recall on devices 
 
 At the moment, Amperage can only enable recall if your machine has an _Arm64 CPU / SoC_. That is, any **Qualcomm Snapdragon**, **Microsoft SQ**, or **Ampere** chipset.
 
-Make sure that you're running Windows 11 version 24H2 **build 26100.712** before continuing. Older builds, as well as newer betas (builds 26200-26217) do not include the necessary OS level components for Recall.
+Make sure that you're running a build of Windows 11 that contains Recall. Here's a list of valid builds as of 6/21/2024:
+* Windows 11 version 24H2
+  * 26100.7xx
+  * 26120.7xx
+* Windows 11 Insider Preview (Canary)
+  * 26227.5000
+  * 26231.5000
+  * 26236.5000
+
+Older revisions of Windows 11 version 24H2 (.6xx and lower) as well as newer ones (.8xx) do not include the necessary OS level components for Recall. The same applies for Canary builds before 26227 and after 26236.
 
 Most x86_64 users will have to wait until Microsoft publishes AI Components for their platform. _However_, if you're feeling particularly adventurous you can try [Emulating Arm64 Windows on your x86_64 Windows PC](https://github.com/thebookisclosed/AmperageKit/blob/main/ArmOnX86_64.md)
 
